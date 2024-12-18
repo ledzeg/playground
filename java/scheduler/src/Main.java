@@ -1,13 +1,11 @@
-
-/** TODO 1 Solution Start: Import the Scanner **/
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         Scanner keyboard = new Scanner(System.in);
 
-        int dayOfTheWeek = 1;
+        int dayOfTheWeek;
 
         int subChoice;
 
@@ -26,7 +24,7 @@ public class Main {
 
         System.out.println("Enter your choice of the day (1-7):");
         dayOfTheWeek = keyboard.nextInt();
-
+        keyboard.nextLine(); // to clean buffer
         switch(dayOfTheWeek) {
 
             case 1:
@@ -92,4 +90,4 @@ public class Main {
 
     }
 
-} 
+}
